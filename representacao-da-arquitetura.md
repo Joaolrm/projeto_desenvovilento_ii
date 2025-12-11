@@ -16,9 +16,9 @@ O modelo de arquitetura adotado foi **MVC (Model-View-Controller)** adaptado par
 │  │  - Contexts (AuthContext)                            │   │
 │  └──────────────────────────────────────────────────────┘   │
 │  ┌──────────────────────────────────────────────────────┐   │
-│  │  Services Layer (Controller Logic)                    │   │
+│  │  Services Layer (Controller Logic)                   │   │
 │  │  - API Service (HTTP requests)                       │   │
-│  │  - Auth Service                                        │   │
+│  │  - Auth Service                                      │   │
 │  └──────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────┘
                             │
@@ -35,10 +35,10 @@ O modelo de arquitetura adotado foi **MVC (Model-View-Controller)** adaptado par
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │  Services (Business Logic)                           │   │
 │  │  - AuthService, BillsService,                        │   │
-│  │    PaymentsService, BalanceService                    │   │
+│  │    PaymentsService, BalanceService                   │   │
 │  └──────────────────────────────────────────────────────┘   │
 │  ┌──────────────────────────────────────────────────────┐   │
-│  │  Entities (Models)                                    │   │
+│  │  Entities (Models)                                   │   │
 │  │  - User, Bill, Payment, UserBill,                    │   │
 │  │    ActualBalance, HistoryBalance, BillValue          │   │
 │  └──────────────────────────────────────────────────────┘   │
@@ -48,7 +48,7 @@ O modelo de arquitetura adotado foi **MVC (Model-View-Controller)** adaptado par
                             │ (ORM Layer)
                             ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Database Layer (PostgreSQL)               │
+│                    Database Layer (PostgreSQL)              │
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │  Tables: users, bills, payments, user_bills,         │   │
 │  │          actual_balance, history_balance, bill_values│   │
@@ -162,28 +162,28 @@ O modelo de arquitetura adotado foi **MVC (Model-View-Controller)** adaptado par
       │ *
       │
       │ 1
-┌─────────────┐
-│ActualBalance│
-├─────────────┤
-│ + debtor_id │
+┌──────────────┐
+│ActualBalance │
+├──────────────┤
+│ + debtor_id  │
 │ + borrower_id│
-│ + value     │
-└─────────────┘
+│ + value      │
+└──────────────┘
       │
       │ *
       │
       │ 1
-┌─────────────┐
+┌──────────────┐
 │HistoryBalance│
-├─────────────┤
-│ + id        │
-│ + debtor_id │
+├──────────────┤
+│ + id         │
+│ + debtor_id  │
 │ + borrower_id│
-│ + bill_id   │
-│ + value     │
-│ + descript  │
-│ + is_paid   │
-└─────────────┘
+│ + bill_id    │
+│ + value      │
+│ + descript   │
+│ + is_paid    │
+└──────────────┘
 ```
 
 ### Banco de Dados
