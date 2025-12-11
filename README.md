@@ -4,7 +4,7 @@
 **Unidade Curricular:** Projeto de Desenvolvimento II  
 **Professor:** Luciano Zanuz  
 **Ano/Semestre:** 2025/2  
-**Participante:** João Luís Rosa de Moura  
+**Participante:** João Luís Rosa de Moura
 
 ---
 
@@ -12,25 +12,37 @@ Esse documento tem como objetivo apresentar e descrever o projeto final, fornece
 
 ## Resumo do Projeto
 
-O controle e divisão de despesas compartilhadas atualmente é realizado de forma manual através de planilhas Excel, gerando processos demorados, erros de cálculo e constrangimento social na cobrança entre amigos e familiares. O problema é significativo porque afeta grupos que compartilham despesas fixas regularmente, causando perda de tempo, conflitos interpessoais e falta de transparência financeira. 
+O controle e divisão de despesas compartilhadas atualmente é realizado de forma manual através de planilhas Excel, gerando processos demorados, erros de cálculo e constrangimento social na cobrança entre amigos e familiares. O problema é significativo porque afeta grupos que compartilham despesas fixas regularmente, causando perda de tempo, conflitos interpessoais e falta de transparência financeira.
 
 O **Racha do Mês** é um aplicativo web e mobile que automatiza a divisão de valores, registra pagamentos, gera cobranças personalizadas e organiza o histórico em um dashboard centralizado. A solução elimina a necessidade de planilhas manuais, reduz erros de cálculo e facilita a gestão transparente de finanças coletivas, resultando em economia de tempo e melhoria nas relações interpessoais dos grupos.
+
+## 🌐 Aplicação em Produção
+
+**Acesse a aplicação:** [https://racha-do-mes-fe.vercel.app/](https://racha-do-mes-fe.vercel.app/)
+
+A aplicação está publicada e disponível para uso:
+
+- **Frontend:** Hospedado na Vercel
+- **Backend:** Hospedado no Google Cloud Platform
+- **Status:** ✅ Online e funcional
+
+Para mais detalhes sobre deploy e publicação, consulte: [Deploy e Publicação](deploy-publicacao.md)
 
 ## [Canvas do Produto](canvas-do-produto.md)
 
 ## [Planejamento da Release](planejamento-da-release.md)
 
-## [Representação da Arquitetura](representacao-da-arquitetura.md) 
+## [Representação da Arquitetura](representacao-da-arquitetura.md)
 
 ## [Desenvolvimento da Solução](desenvolvimento-da-solucao.md)
-
-## [Testes e Validação](testes.md)
 
 ## [Testes e Validação](testes.md)
 
 ## [POSTMORTEM](postmortem.md)
 
 ## [Cronograma de Desenvolvimento](cronograma.md)
+
+## [Deploy e Publicação](deploy-publicacao.md)
 
 ## Referências Bibliográficas
 
@@ -45,4 +57,3 @@ REACT TEAM. React Documentation. Disponível em: https://react.dev/.
 TYPEORM TEAM. TypeORM Documentation. Disponível em: https://typeorm.io/.
 
 VERCEL TEAM. Vercel Documentation. Disponível em: https://vercel.com/docs.
-

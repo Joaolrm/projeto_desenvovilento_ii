@@ -47,6 +47,13 @@
 - **PostgreSQL** garantiu confiabilidade e performance
 - **TypeORM** facilitou interação com banco de dados
 
+### 8. Deploy em Produção
+- **Deploy bem-sucedido** na Vercel (frontend) e Google Cloud (backend)
+- **Aplicação acessível publicamente** em: https://racha-do-mes-fe.vercel.app/
+- **Infraestrutura escalável** e confiável
+- **SSL/HTTPS** configurado automaticamente
+- **Deploy contínuo** via integração com Git
+
 ---
 
 ## Pontos Negativos
