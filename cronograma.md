@@ -21,7 +21,7 @@ O desenvolvimento do projeto Racha do Mês foi realizado ao longo do semestre 20
 | 31/10 | Mentoria | • Desenvolvimento - Geração de mensagens<br>• Tela de geração de cobranças<br>• Templates de mensagens (WhatsApp/Email) |
 | 07/11 | Mentoria | • Integração completa frontend-backend<br>• Testes de funcionalidades principais<br>• Correção de bugs identificados |
 | 14/11 | Mentoria | • Implementação de melhorias de UX/UI<br>• Testes de usabilidade<br>• Preparação do ambiente de produção |
-| 21/11 | **Entrega 3: Documentação final do projeto** | • Deploy da aplicação (Vercel + Google Cloud)<br>• Documentação técnica completa<br>• Testes finais e validação |
+| 21/11 | **Entrega 3: Documentação final do projeto** | • Deploy da aplicação (Vercel + Supabase)<br>• Documentação técnica completa<br>• Testes finais e validação |
 | 28/11 | Mentoria | • Preparação da apresentação final<br>• Criação de demo com dados de teste<br>• Ajustes finais baseados na documentação |
 | 05/12 | **Apresentação final do projeto** | • Apresentação do projeto completo<br>• Demonstração ao vivo do MVP<br>• Coleta de feedback final |
 | 12/12 | **Apresentação final do projeto** | • Apresentações finais (se necessário)<br>• Entrega final do código e documentação<br>• Retrospectiva do projeto |

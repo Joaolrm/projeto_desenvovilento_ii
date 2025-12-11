@@ -23,7 +23,8 @@ O **Racha do Mês** é um aplicativo web e mobile que automatiza a divisão de v
 A aplicação está publicada e disponível para uso:
 
 - **Frontend:** Hospedado na Vercel
-- **Backend:** Hospedado no Google Cloud Platform
+- **Backend:** Hospedado na Vercel (Serverless Functions)
+- **Banco de Dados:** PostgreSQL no Supabase
 - **Status:** ✅ Online e funcional
 
 Para mais detalhes sobre deploy e publicação, consulte: [Deploy e Publicação](deploy-publicacao.md)
@@ -46,8 +47,6 @@ Para mais detalhes sobre deploy e publicação, consulte: [Deploy e Publicação
 
 ## Referências Bibliográficas
 
-GOOGLE CLOUD. Google Cloud Documentation. Disponível em: https://cloud.google.com/docs.
-
 NESTJS TEAM. NestJS Documentation. Disponível em: https://docs.nestjs.com/.
 
 POSTGRESQL GLOBAL DEVELOPMENT GROUP. PostgreSQL Documentation. Disponível em: https://www.postgresql.org/docs/.
@@ -57,3 +56,5 @@ REACT TEAM. React Documentation. Disponível em: https://react.dev/.
 TYPEORM TEAM. TypeORM Documentation. Disponível em: https://typeorm.io/.
 
 VERCEL TEAM. Vercel Documentation. Disponível em: https://vercel.com/docs.
+
+SUPABASE TEAM. Supabase Documentation. Disponível em: https://supabase.com/docs.

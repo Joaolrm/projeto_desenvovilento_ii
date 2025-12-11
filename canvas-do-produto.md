@@ -26,7 +26,7 @@ O Canvas do Produto do Racha do Mês foi desenvolvido utilizando a ferramenta Ca
 ### Canais
 - Aplicativo Web (acessível via navegador)
 - Interface Mobile Responsiva
-- Distribuição via hospedagem em nuvem (Vercel + Google Cloud)
+- Distribuição via hospedagem em nuvem (Vercel + Supabase)
 
 ### Relacionamento com Clientes
 - Interface intuitiva e fácil de usar
@@ -51,7 +51,7 @@ O Canvas do Produto do Racha do Mês foi desenvolvido utilizando a ferramenta Ca
 - Suporte aos usuários
 
 ### Parceiros Principais
-- Provedores de hospedagem (Vercel, Google Cloud)
+- Provedores de hospedagem (Vercel para frontend/backend, Supabase para banco de dados)
 - Comunidade de desenvolvedores open source
 
 ### Estrutura de Custos

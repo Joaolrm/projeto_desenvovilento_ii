@@ -48,11 +48,12 @@
 - **TypeORM** facilitou interação com banco de dados
 
 ### 8. Deploy em Produção
-- **Deploy bem-sucedido** na Vercel (frontend) e Google Cloud (backend)
+- **Deploy bem-sucedido** na Vercel (frontend e backend) e Supabase (banco de dados)
 - **Aplicação acessível publicamente** em: https://racha-do-mes-fe.vercel.app/
-- **Infraestrutura escalável** e confiável
+- **Infraestrutura escalável** e confiável com Serverless Functions
 - **SSL/HTTPS** configurado automaticamente
 - **Deploy contínuo** via integração com Git
+- **Banco de dados gerenciado** no Supabase com backups automáticos
 
 ---
 

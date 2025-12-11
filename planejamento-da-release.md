@@ -239,7 +239,7 @@ As histórias foram levantadas através de:
 - Testes de integração
 - Testes de usabilidade
 - Correção de bugs
-- Deploy em produção (Vercel + Google Cloud)
+- Deploy em produção (Vercel + Supabase)
 - Documentação final
 
 **Entregáveis:**

@@ -22,14 +22,31 @@ O frontend foi deployado na Vercel, aproveitando:
 
 ### Backend (NestJS)
 
-**Plataforma:** Google Cloud Platform  
+**Plataforma:** Vercel  
 **Status:** ✅ Online e funcional
 
-O backend foi deployado no Google Cloud, utilizando:
+O backend foi deployado na Vercel como Serverless Functions, aproveitando:
 
-- Containerização com Docker
-- Banco de dados PostgreSQL gerenciado
-- API REST acessível via HTTPS
+- Deploy automático via integração com Git
+- Serverless Functions para API REST
+- SSL/HTTPS automático
+- Escalabilidade automática
+- Integração nativa com frontend
+
+---
+
+### Banco de Dados (PostgreSQL)
+
+**Plataforma:** Supabase  
+**Status:** ✅ Online e funcional
+
+O banco de dados PostgreSQL está hospedado no Supabase, oferecendo:
+
+- PostgreSQL gerenciado e otimizado
+- Backups automáticos
+- Interface de gerenciamento web
+- Conexão segura via SSL
+- Pool de conexões otimizado
 
 ---
 
@@ -51,17 +68,18 @@ O backend foi deployado no Google Cloud, utilizando:
                │ API REST (HTTPS)
                ▼
 ┌─────────────────────────────────────┐
-│   Backend (Google Cloud)            │
+│   Backend (Vercel Serverless)       │
 │   - NestJS API                      │
-│   - Docker Container                │
-│   - Load Balancer                   │
+│   - Serverless Functions            │
+│   - Auto-scaling                    │
 └──────────────┬──────────────────────┘
-               │ TypeORM
+               │ TypeORM (SSL)
                ▼
 ┌─────────────────────────────────────┐
-│   PostgreSQL (Google Cloud SQL)     │
+│   PostgreSQL (Supabase)             │
 │   - Database Gerenciado             │
 │   - Backups Automáticos             │
+│   - Connection Pooling              │
 └─────────────────────────────────────┘
 ```
 
@@ -74,13 +92,22 @@ O backend foi deployado no Google Cloud, utilizando:
 3. **Deploy**: Build otimizado é distribuído via CDN global
 4. **Rollback**: Possibilidade de reverter para versões anteriores
 
-### Backend (Google Cloud)
+### Backend (Vercel)
 
-1. **Build da Imagem Docker**: Criação da imagem containerizada
-2. **Push para Container Registry**: Upload da imagem
-3. **Deploy no Cloud Run**: Deploy automático ou manual
-4. **Configuração de Variáveis**: Variáveis de ambiente configuradas
-5. **Health Checks**: Monitoramento automático de saúde da aplicação
+1. **Integração com Git**: Push para branch principal dispara deploy automático
+2. **Build**: Vercel detecta projeto NestJS e executa build automaticamente
+3. **Serverless Functions**: API é convertida em Serverless Functions
+4. **Deploy**: Funções são distribuídas globalmente
+5. **Configuração de Variáveis**: Variáveis de ambiente configuradas no dashboard
+6. **Rollback**: Possibilidade de reverter para versões anteriores
+
+### Banco de Dados (Supabase)
+
+1. **Criação do Projeto**: Projeto criado no Supabase
+2. **Configuração do PostgreSQL**: Banco de dados PostgreSQL provisionado
+3. **Migrações**: Schema aplicado através de migrações TypeORM
+4. **Configuração de Conexão**: String de conexão configurada no backend
+5. **Backups Automáticos**: Supabase realiza backups automáticos diários
 
 ## Variáveis de Ambiente
 
@@ -110,9 +137,10 @@ O backend foi deployado no Google Cloud, utilizando:
 
 ### Logs
 
-- Logs de aplicação disponíveis no Google Cloud Console
+- **Frontend e Backend**: Logs disponíveis no Vercel Dashboard
+- **Banco de Dados**: Logs disponíveis no Supabase Dashboard
 - Logs de acesso e erros monitorados
-- Alertas configurados para problemas críticos
+- Visualização em tempo real de requisições e erros
 
 ## Segurança
 
@@ -135,9 +163,10 @@ O backend foi deployado no Google Cloud, utilizando:
 
 ### Banco de Dados
 
-- **Backups Automáticos**: Google Cloud SQL realiza backups diários
-- **Retenção**: Backups mantidos por período configurado
-- **Point-in-Time Recovery**: Possibilidade de restaurar para momento específico
+- **Backups Automáticos**: Supabase realiza backups diários automaticamente
+- **Retenção**: Backups mantidos conforme plano do Supabase
+- **Point-in-Time Recovery**: Disponível através do Supabase Dashboard
+- **Exportação Manual**: Possibilidade de exportar dados via interface web
 
 ### Código
 
@@ -147,24 +176,28 @@ O backend foi deployado no Google Cloud, utilizando:
 
 ## Custos
 
-### Vercel (Frontend)
+### Vercel (Frontend + Backend)
 
-- Plano Hobby: Gratuito para projetos pessoais
-- Inclui: 100GB de bandwidth, deploys ilimitados
+- **Plano Hobby**: Gratuito para projetos pessoais
+- **Frontend**: 100GB de bandwidth, deploys ilimitados
+- **Backend**: Serverless Functions com limite generoso no plano gratuito
+- **Inclui**: SSL automático, CDN global, analytics básico
 
-### Google Cloud (Backend + Database)
+### Supabase (Banco de Dados)
 
-- Cloud Run: Cobrança por uso (CPU, memória, requisições)
-- Cloud SQL: Cobrança por instância e armazenamento
-- Estimativa mensal: Variável conforme uso
+- **Plano Free**: Gratuito com limites generosos
+- **Inclui**: 500MB de banco de dados, 2GB de bandwidth
+- **Recursos**: Backups automáticos, interface web, API REST automática
+- **Upgrade**: Planos pagos disponíveis para maior capacidade
 
 ## Acesso e Credenciais
 
 ### Para Desenvolvedores
 
 - Acesso ao repositório Git para deploy
-- Acesso ao Google Cloud Console para gerenciamento
-- Acesso ao Vercel Dashboard para frontend
+- Acesso ao Vercel Dashboard para gerenciamento de frontend e backend
+- Acesso ao Supabase Dashboard para gerenciamento do banco de dados
+- Logs e métricas disponíveis em ambos os dashboards
 
 ### Para Usuários Finais
 
