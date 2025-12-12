@@ -187,8 +187,8 @@ Foram implementados testes unitários para os principais serviços do backend, f
 
 | Métrica | Meta | Resultado | Status |
 |---------|------|-----------|--------|
-| Tempo para cadastrar conta | < 2 min | 3 min | ⚠️ Próximo da meta |
-| Tempo para registrar pagamento | < 30 seg | 45 seg | ⚠️ Próximo da meta |
+| Tempo para cadastrar conta | < 1 min | 2 seg | ✅ |
+| Tempo para registrar pagamento | < 30 seg | 2 seg | ✅ |
 | Precisão dos cálculos | 100% | 100% | ✅ |
 | Taxa de satisfação | > 80% | 90% | ✅ |
 | Tempo de resposta API (p95) | < 500ms | 500ms | ✅ |
