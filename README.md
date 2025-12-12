@@ -29,6 +29,13 @@ A aplicação está publicada e disponível para uso:
 
 Para mais detalhes sobre deploy e publicação, consulte: [Deploy e Publicação](deploy-publicacao.md)
 
+## 📦 Repositórios do Projeto
+
+O projeto está dividido em dois repositórios principais:
+
+- **Backend:** [https://github.com/Joaolrm/racha-do-mes](https://github.com/Joaolrm/racha-do-mes)
+- **Frontend:** [https://github.com/Joaolrm/racha-do-mes-fe](https://github.com/Joaolrm/racha-do-mes-fe)
+
 ## [Canvas do Produto](canvas-do-produto.md)
 
 ## [Planejamento da Release](planejamento-da-release.md)
